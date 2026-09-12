@@ -376,78 +376,86 @@
   <div class="main-content">
     <nav>
       <a href="#about">About</a>
+      <a href="#education">Education</a>
       <a href="#skills">Skills</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#publications">Publications</a>
       <a href="#leadership">Leadership</a>
+      <a href="#contact">Contact</a>
       <button id="mode-toggle">Toggle Mode</button>
     </nav>
 
     <div class="section-container" id="about">
       <h2>About Me</h2>
       <img src="images/Saikishen P V.png" alt="Saikishen P V" class="about-me-photo">
-        <p>Embedded systems engineer specializing in STM32/ESP32 firmware, FPGA-accelerated telemetry, and secure IoT deployments — from simulation to real hardware.</p>
-        <p>Strong focus on <strong>firmware, hardware–software co-design, FPGA acceleration, and secure IoT systems</strong>. Experience spanning <strong>MCUs, RTOS & FPGA </strong>.</p>
-      <p>B.Tech in Electrical and Computer Engineering (CGPA: <strong>9.43/10</strong>)</p>
+      <p>RISC-V RTL and verification engineer with experience in synthesizable processor design, pipeline microarchitecture, RTL verification, FPGA-based acceleration, and embedded firmware.</p>
+      <p>Strong focus on <strong>RISC-V CPU design, hardware-software co-design, FPGA acceleration, secure telemetry, and embedded systems</strong>. I have designed and verified a five-stage RV64I processor with hazard handling and automated regression, and built dual-MCU OTA firmware for EV-charging systems.</p>
+      <p>Interested in <strong>RISC-V ISA extensions, control-flow and data-flow integrity, hardware security, and low-level systems</strong>.</p>
       <p>Strong foundation in:</p>
       <ul>
-        <li>Embedded Systems</li>
-        <li>DSP</li>
         <li>Computer Architecture</li>
         <li>Operating Systems</li>
+        <li>Embedded Systems</li>
+        <li>Digital Signal Processing</li>
+        <li>Digital Design</li>
       </ul>
-      <p>Proven ability to take systems <strong>from MATLAB/Simulink → firmware → hardware debugging</strong>.</p>
-      <p> Comfortable working with:</p>
-      <ul>
-          <li>Oscilloscopes, logic analyzers, JTAG/SWD</li>
-          <li>Production-grade firmware and field deployments</li>
-      </ul>
-      <p>Strong communication skills, with entire education in English and experience presenting papers and collaborating in multi-disciplinary teams</p>
+      <p>Proven ability to take systems from <strong>microarchitecture and RTL implementation to simulation, FPGA validation, firmware integration, and research publication</strong>.</p>
+    </div>
+
+    <div class="section-container" id="education">
+      <h2>Education</h2>
+      <div class="achievement">
+        <h3>Amrita Vishwa Vidyapeetham - B.Tech. Electrical and Computer Engineering</h3>
+        <p><strong>Embedded Systems</strong> specialization, 2022 - 2026</p>
+        <p>CGPA: <strong>9.38/10</strong></p>
+        <p>Relevant coursework: Computer Architecture, Operating Systems, Embedded Systems, Digital Signal Processing, Digital Design.</p>
+      </div>
     </div>
 
     <div class="section-container" id="skills">
         <h2>Technical Skills</h2>
         <div class="skills-grid">
             <div class="skill-category">
-                <h3>Embedded & Firmware</h3>
+                <h3>RTL & Verification</h3>
                 <ul>
-                    <li>STM32 (F4, F7), ESP32</li>
-                    <li>FreeRTOS</li>
-                    <li>Custom bootloaders</li>
-                    <li>UART, SPI, I2C, DMA</li>
-                    <li>Interrupt handling, timers, watchdogs</li>
+                    <li>SystemVerilog, Verilog</li>
+                    <li>RTL design and pipeline design</li>
+                    <li>Hazard detection and forwarding</li>
+                    <li>Verilator, Icarus Verilog, ModelSim</li>
+                    <li>Functional coverage and automated regression</li>
                 </ul>
             </div>
             <div class="skill-category">
-                <h3>Hardware & FPGA</h3>
+                <h3>Computer Architecture</h3>
                 <ul>
-                    <li>Xilinx Spartan-7</li>
-                    <li>Verilog, VHDL</li>
-                    <li>Vivado, ModelSim</li>
-                    <li>Hardware bring-up & debugging</li>
-                    <li>FPGA-based acceleration (compression + encryption)</li>
+                    <li>RISC-V RV64I and RV32E</li>
+                    <li>ISA implementation</li>
+                    <li>CPU microarchitecture</li>
+                    <li>Five-stage pipelines</li>
+                    <li>Control and data hazards</li>
+                    <li>FPGA-based processors</li>
+                    <li>Hardware security fundamentals</li>
                 </ul>
             </div>
             <div class="skill-category">
-                <h3>Programming Languages</h3>
+                <h3>Embedded Systems</h3>
                 <ul>
-                    <li>C / Embedded C</li>
-                    <li>ARM Assembly</li>
-                    <li>Python</li>
-                    <li>Zig</li>
-                    <li>MATLAB / Simulink</li>
+                    <li>STM32, ESP32</li>
+                    <li>FreeRTOS and embedded Linux</li>
+                    <li>SPI, UART, I2C, DMA</li>
+                    <li>Bootloaders and OTA firmware</li>
+                    <li>CRC, RFID, MQTT</li>
                 </ul>
             </div>
             <div class="skill-category">
-                <h3>Tools & Platforms</h3>
+                <h3>Languages & Tools</h3>
                 <ul>
-                    <li>Linux (system programming, Bash)</li>
+                    <li>C, Embedded C, Python</li>
+                    <li>ARM Assembly and Bash</li>
                     <li>Git</li>
-                    <li>Docker</li>
-                    <li>ST-LINK</li>
-                    <li>Wireshark</li>
-                    <li>MQTT</li>
+                    <li>Vivado</li>
+                    <li>Xilinx Artix-7 and Spartan-7 FPGA flows</li>
                 </ul>
             </div>
         </div>
@@ -456,50 +464,64 @@
     <div class="section-container" id="experience">
       <h2>Experience</h2>
       <div class="experience">
-        <h3>chargeMOD — Embedded R&D Intern (Ongoing...)</h3>
-        <p>Real-world <strong>EV charging infrastructure</strong>. RFID authentication using STM32 + RC522. SPI with interrupt-driven design. DSP algorithms on STM32 for voltage & current filtering and fault detection during charging. Level-1 DC charger firmware & hardware bring-up. Hands-on debugging using oscilloscope & logic analyzer.</p>
+        <h3>Amrita Institute of Medical Sciences - Research Assistant (Jul 2026 - Present)</h3>
+        <p>Developing Python-based EEG signal-processing pipelines for preprocessing, feature extraction, and machine-learning-based epileptic seizure prediction using in-ear EEG recordings. Implementing signal-quality assessment, time-frequency analysis, and model evaluation workflows for physiological time-series data.</p>
+        <p>Creating a novel in-ear EEG/ECG monitoring system to support early prediction and detection of seizures in at-risk patients.</p>
       </div>
       <div class="experience">
-        <h3>Tata Power Renewable Energy — IoT & Telemetry Intern</h3>
-        <p>ESP32-based solar monitoring system. Multi-sensor data acquisition with ADC calibration. Secure telemetry using <strong>MQTT over TLS</strong>. Local buffering for network outages. Field deployment & QA testing.</p>
+        <h3>Embedded Systems Intern - AmritaWNA (Mar 2026 - Jun 2026)</h3>
+        <p>Developed radar sensing software for the TI IWR1443 mmWave sensor and integrated real-time sensor data processing with Raspberry Pi-based embedded Linux systems.</p>
+        <p>Implemented sensor-processing and fusion workflows for UAV-based victim detection, including serial communication, data parsing, and real-time system integration.</p>
+      </div>
+      <div class="experience">
+        <h3>chargeMOD - Embedded R&D Intern (Dec 2025 - Mar 2026)</h3>
+        <p>Designed and implemented a dual-MCU OTA bootloader architecture for STM32 and ESP32-based EV-charging systems, including firmware image validation, CRC-based integrity checks, version handling, and rollback recovery.</p>
+        <p>Developed and tested STM32 SPI drivers and RFID-based charger authentication interfaces, integrating peripheral communication with embedded application firmware. Validated OTA update and rollback behavior across 5 test units.</p>
+      </div>
+      <div class="experience">
+        <h3>Tata Power Renewable Energy - IoT Intern (Apr 2025 - Jun 2025)</h3>
+        <p>Developed an ESP32-based telemetry platform using MQTT for renewable asset monitoring, with an InfluxDB backend for time-series storage and visualization.</p>
+        <p>Implemented sensor acquisition, communication, and data logging firmware and validated the system across 3 in-house field sensors under representative operating conditions.</p>
       </div>
     </div>
 
     <div class="section-container" id="projects">
       <h2>Projects</h2>
+        <a href="https://github.com/Saiikishen/RISC-V-Zba-Processor.git" target="_blank" style="text-decoration: none; color: inherit;">
+            <div class="project">
+                <h3>RV64I Five-Stage Pipelined Processor</h3>
+                <p>Designed a synthesizable 64-bit RV64I processor in SystemVerilog with a five-stage IF/ID/EX/MEM/WB pipeline, forwarding logic, load-use hazard detection, branch flushing, and separate instruction and data memory interfaces.</p>
+                <p>Built an automated regression environment with Verilator and Icarus Verilog, covering 100+ directed and randomized bare-metal C tests with custom startup code and linker scripts. Synthesized the core on a Xilinx Artix-7 FPGA with approximately 50-70 MHz timing closure depending on memory implementation and constraints.</p>
+                <div class="tags">
+                    <span class="tag">SystemVerilog</span>
+                    <span class="tag">RISC-V</span>
+                    <span class="tag">Verilator</span>
+                    <span class="tag">FPGA</span>
+                </div>
+            </div>
+        </a>
+        <a href="https://github.com/Saiikishen/SCADA-TELEMETRY-AND-ANALYTICS-ON-FPGA.git" target="_blank" style="text-decoration: none; color: inherit;">
+            <div class="project">
+                <h3>SCADA Telemetry FPGA Accelerator</h3>
+                <p>Designed and integrated FPGA hardware accelerators for telemetry compression using DPTC and authenticated encryption using ASCON-128a, interfaced with an RV32E soft-core on a Xilinx Spartan-7 device.</p>
+                <p>Reduced telemetry payload size by approximately 35-45% on representative SCADA datasets while maintaining end-to-end processing latency below 10 ms. Added median absolute deviation based anomaly detection for real-time monitoring. Published at IEEE i-PACT 2025 and received the Best Paper Award.</p>
+                <div class="tags">
+                    <span class="tag">SystemVerilog</span>
+                    <span class="tag">FPGA</span>
+                    <span class="tag">ASCON-128a</span>
+                    <span class="tag">RV32E</span>
+                </div>
+            </div>
+        </a>
         <a href="https://github.com/Saiikishen/STM32-OTA-Flasher-using-ESP32.git" target="_blank" style="text-decoration: none; color: inherit;">
             <div class="project">
                 <h3>Dual-MCU OTA Firmware Updater</h3>
-                <p>Custom STM32F407 UART bootloader. Dual-bank flash for safe OTA updates. ESP32-orchestrated OTA pipeline. Chunked firmware streaming with checksum verification. ACK/NACK protocol with retry & failure recovery. Watchdog-safe boot flow (brick-proof design).</p>
+                <p>STM32 and ESP32 OTA firmware architecture for EV-charging systems, including firmware image validation, CRC-based integrity checks, version handling, and rollback recovery.</p>
                 <div class="tags">
                     <span class="tag">Embedded Systems</span>
                     <span class="tag">Bootloaders</span>
                     <span class="tag">OTA</span>
-                    <span class="tag">Reliability Engineering</span>
-                </div>
-            </div>
-        </a>
-        <a href="https://github.com/Saiikishen/SCADA-TELEMETRY-AND-EDGE-ANALYTICS-ON-FPGA.git" target="_blank" style="text-decoration: none; color: inherit;">
-            <div class="project">
-                <h3>SCADA Telemetry Optimization using FPGA (B.Tech capstone project, Ongoing...)</h3>
-                <p>FPGA-accelerated <strong>LZ4 compression</strong>. <strong>AES-256 encryption in hardware</strong>. Spartan-7 based design. MATLAB/Simulink digital twin. Hardware-in-the-Loop (HIL) verification. <strong>65% data reduction</strong>. Sub-10ns encryption latency.</p>
-                <div class="tags">
-                    <span class="tag">FPGA</span>
-                    <span class="tag">Hardware Acceleration</span>
-                    <span class="tag">Industrial Systems</span>
-                    <span class="tag">Security</span>
-                </div>
-            </div>
-        </a>
-        <a href="https://github.com/Saiikishen/EMBEDDED-DEBUGGER.git" target="_blank" style="text-decoration: none; color: inherit;">
-            <div class="project">
-                <h3>Terminal-Based Embedded Debugger (Ongoing...)</h3>
-                <p>Written in <strong>Zig</strong>. Supports ESP32 & STM32. SWD/JTAG-based debugging. Register inspection, memory analysis. FreeRTOS task introspection. Automated crash & fault analysis. Modular transport layer. Dual-core ESP32 + Cortex-M support.</p>
-                <div class="tags">
-                    <span class="tag">Low-Level Systems</span>
-                    <span class="tag">Debuggers</span>
-                    <span class="tag">RTOS</span>
-                    <span class="tag">Zig</span>
+                    <span class="tag">Reliability</span>
                 </div>
             </div>
         </a>
@@ -507,6 +529,10 @@
     
     <div class="section-container" id="publications">
         <h2>Publications & Research</h2>
+        <div class="publication">
+          <h3>SCADA Telemetry and Analytics on FPGA - IEEE i-PACT 2025</h3>
+          <p>Best Paper Award winning work on FPGA-accelerated telemetry compression, authenticated encryption, and anomaly detection for real-time industrial monitoring.</p>
+        </div>
         <div class="publication">
 			<a href="https://ieeexplore.ieee.org/document/11176694" target="_blank" style="text-decoration: none; color: inherit;">
 				<h3>IoT-Enabled Smart Home Energy Management System: Methodology and Implementation</h3>
@@ -528,13 +554,14 @@
         <h2>Leadership & Achievements</h2>
         <div class="achievement">
             <h3>Research & Security</h3>
-            <p>Student Researcher — IGEM Amrita (IEC 61850 protocol enhancements, Smart grid security focus)</p>
-            <p>Security Researcher — Team bi0s (Binary reverse engineering (Ghidra), Top-50 national CTF rankings)</p>
+            <p>Research Assistant - Amrita Institute of Medical Sciences, developing EEG signal-processing and seizure-prediction workflows for in-ear EEG recordings.</p>
+            <p>Security Researcher - Team bi0s, with a Top-50 national CTF finish and experience in low-level security research.</p>
         </div>
         <div class="achievement">
             <h3>Awards</h3>
-            <p>Best Paper Award — IEEE i-PACT 2025</p>
-            <p>“Quantum Excellence” — Qiskit Global Summer School 2025</p>
+            <p>IEEE Best Paper Award - i-PACT 2025</p>
+            <p>Qiskit Global Summer School - Quantum Excellence</p>
+            <p>Top-50 National CTF Finisher - bi0s</p>
         </div>
     </div>
 
@@ -542,10 +569,18 @@
         <h2>What Makes Me Stand Out</h2>
         <ul>
             <li>Strong <strong>systems-level thinking</strong></li>
-            <li>Rare combination of embedded firmware, FPGA acceleration, security research, and academic publications</li>
-            <li>Proven ability to design → implement → debug → deploy</li>
+            <li>Rare combination of RISC-V processor design, RTL verification, FPGA acceleration, embedded firmware, and hardware security interests</li>
+            <li>Proven ability to design, implement, verify, synthesize, debug, and validate systems on hardware</li>
             <li>Comfortable with both <strong>research and production systems</strong></li>
         </ul>
+    </div>
+
+    <div class="section-container" id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:pvsaikishen@gmail.com" style="color: inherit;">pvsaikishen@gmail.com</a></p>
+      <p>Phone: <a href="tel:+919207835606" style="color: inherit;">+91-92078 35606</a></p>
+      <p>GitHub: <a href="https://github.com/Saiikishen" target="_blank" style="color: inherit;">github.com/Saiikishen</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/saikishen-pv" target="_blank" style="color: inherit;">linkedin.com/in/saikishen-pv</a></p>
     </div>
   </div>
 
